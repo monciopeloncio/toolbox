@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  aroa:
+    container_name: aroa
+    image: php7.3.6
+    environment:
+    - PHPUNITBIN=/var/www/html/vendor/bin/phpunit
+    ports: 
+    - '80:80'
+    volumes:
+    - path_to_project:/var/www/html
