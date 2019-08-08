@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# Iterate by multiple json line files, reshape the jsons and concatenate the output in a file
+# Iterate by multiple json line files, 
+# Reshape the jsons using jq. More info: https://stedolan.github.io/jq/
+# Concatenate the output in a file
 
 for filename in path/*; do
     [ -e "$filename" ] || continue
